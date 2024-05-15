@@ -10,4 +10,5 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
     console.log('listening on port 3000')
     console.log(`Your secret is ${process.env.SECRET_PASSWORD}`);
+    console.log(`My mongo db url is ${process.env.MONGODB_URI}`);
 })
