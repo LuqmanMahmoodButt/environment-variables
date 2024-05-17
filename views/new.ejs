@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+</head>
+<%- include('./partials/nav') %>
+
+    <body>
+        <h1> add new fries</h1>
+
+        <form action="/fries" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="text">Type:</label>
+            <input type="text" name="type" id="type">
+            <label for="rating">Rating:</label>
+            <input type="text" name="rating" id="rating">
+
+            <button type="submit">Add Fries</button>
+        </form>
+
+    </body>
+
+</html>

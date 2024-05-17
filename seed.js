@@ -14,7 +14,7 @@ async function seed() {
         type: 'curly',
         rating: 4,
     })
-    
+
     console.log(fry);
 
     mongoose.disconnect()

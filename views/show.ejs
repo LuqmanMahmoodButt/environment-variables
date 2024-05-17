@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+</head>
+<%- include('./partials/nav') %>
+
+    <body>
+        <h1>
+            <%= fries.name %>
+        </h1>
+        <p>
+            <%= fries.type %>
+        </p>
+        <p>
+            <%= fries.rating %>
+        </p>
+        <form action="/fries/<%=fries._id%>?_method=DELETE" method="POST">
+            <button type="submit">Delete <%= fries.name %></button>
+        </form>
+        <a href="/fries/<%= fries._id %>/edit">Edit <%= fries.name %></a>
+    </body>
+    <a href="/fries">Back to Fries</a>
+
+</html>

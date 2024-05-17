@@ -1,0 +1,13 @@
+<body>
+
+    <h1>Edit <%= fries.name %> </h1>
+    <form action="/fries/<%=fries._id%>?_method=PUT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="isReadyToEat">Ready to Eat?</label>
+        <input type="checkbox" name="isReadyToEat" id="isReadyToEat" />
+        <button type="submit">Update Fries</button>
+    </form>
+    <a href="/fries">Back to fries</a>
+</body>
