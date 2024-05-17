@@ -35,7 +35,7 @@ app.get('/fries/:friesId', async (req, res) => {
         fries,
     })
 })
-
+//
 // tell express to expect some json in the request 
 app.get('/add-fries', (req, res) => {
     res.render('new.ejs')
